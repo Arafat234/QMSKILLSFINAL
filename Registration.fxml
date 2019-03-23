@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="701.0" prefWidth="655.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qmskillsfinal.RegistrationController">
+   <children>
+      <AnchorPane id="Anchorpane2" layoutX="22.0" layoutY="69.0" prefHeight="607.0" prefWidth="612.0" style="-fx-background-color: #F0F0F0;">
+         <children>
+            <Button id="Submit" fx:id="submit" layoutX="388.0" layoutY="537.0" mnemonicParsing="false" onAction="#StoreDetails" prefHeight="27.0" prefWidth="150.0" text="Submit" />
+            <Button id="clearAllFields" fx:id="clear" layoutX="200.0" layoutY="537.0" mnemonicParsing="false" onAction="#clearAllFields" prefHeight="27.0" prefWidth="150.0" text="Clear All Fields" />
+            <Button id="Cancel" fx:id="cancel" layoutX="25.0" layoutY="537.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="150.0" text="Cancel" />
+            <Label id="Degree" layoutX="17.0" layoutY="23.0" text="Degree:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField id="StudentIDTextBox" fx:id="studentid" layoutX="114.0" layoutY="64.0" prefHeight="27.0" prefWidth="482.0" promptText="StudentID" />
+            <TextArea id="TCtextbox" layoutX="27.0" layoutY="458.0" prefHeight="60.0" prefWidth="559.0" text="Please tick yes if you have entered in all correct information for each field specified &#10;and are willing to accept a potential denial in creation of an account given a detail on &#10;the form is incorrect. &#10;">
+               <font>
+                  <Font name="PT Serif Caption Italic" size="12.0" />
+               </font>
+            </TextArea>
+            <Label id="TC" layoutX="10.0" layoutY="430.0" text="Accept Terms and Conditions">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="userRole" layoutX="20.0" layoutY="387.0" text="User Role:">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="phoneNumber" layoutX="4.0" layoutY="351.0" text="Phone number:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="email" layoutX="33.0" layoutY="311.0" text="Email:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField id="EmailTextBox" fx:id="email" layoutX="114.0" layoutY="306.0" prefHeight="27.0" prefWidth="482.0" promptText="Email" />
+            <TextField id="YearOfStudyTextBox" fx:id="yearofstudy" layoutX="114.0" layoutY="267.0" prefHeight="27.0" prefWidth="482.0" promptText="Year of Study" />
+            <TextField id="UserNameTextbox" fx:id="username" layoutX="114.0" layoutY="153.0" prefHeight="27.0" prefWidth="482.0" promptText="User Name" />
+            <TextField id="FullNameTextBox" fx:id="fullname" layoutX="114.0" layoutY="110.0" prefHeight="27.0" prefWidth="482.0" promptText="Full Name" />
+            <Label id="FullName" layoutX="18.0" layoutY="116.0" text="Full Name:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="yearofstudy" layoutX="7.0" layoutY="273.0" text="Year of Study:">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="Reenterpassword" layoutX="7.0" layoutY="234.0" prefHeight="21.0" prefWidth="134.0" text="Re-Enter Password:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="Password" layoutX="20.0" layoutY="195.0" text="Password:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="UserName" layoutX="15.0" layoutY="159.0" text="User Name:">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="StudentID" layoutX="17.0" layoutY="69.0" text="StudentID:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField id="EmailTextBox" fx:id="phonenumber" layoutX="114.0" layoutY="345.0" prefHeight="27.0" prefWidth="482.0" promptText="Phone Number" />
+            <CheckBox fx:id="ATCcheckbox" layoutX="224.0" layoutY="429.0" mnemonicParsing="false" text="Yes" />
+            <ChoiceBox fx:id="userrolechoice" layoutX="114.0" layoutY="390.0" prefHeight="27.0" prefWidth="157.0" />
+            <ChoiceBox fx:id="degreechoice" layoutX="114.0" layoutY="17.0" prefHeight="27.0" prefWidth="482.0" />
+            <PasswordField fx:id="password1" layoutX="117.0" layoutY="190.0" prefHeight="27.0" prefWidth="482.0" promptText="password" />
+            <PasswordField fx:id="password2" layoutX="141.0" layoutY="231.0" prefHeight="27.0" prefWidth="454.0" promptText="re-enter password" />
+         </children>
+      </AnchorPane>
+      <Text id="title" fill="#fff8f8" layoutX="27.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student and Tutor Registration " wrappingWidth="404.21826171875">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="200.0" layoutX="437.0" layoutY="9.0">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

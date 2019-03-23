@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="1145.0" style="-fx-background-color: #add8e6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qmskillsfinal.ViewsessionController">
+   <children>
+      <Text id="title" fill="#fff8f8" layoutX="31.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Sessions" wrappingWidth="404.21826171875">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Text>
+      <ImageView id="logo" fitHeight="60.0" fitWidth="198.0" layoutX="457.0" layoutY="23.0">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <Button id="TutorPage" fx:id="tutorpage" layoutX="22.0" layoutY="361.0" mnemonicParsing="false" onAction="#tutorpage" prefHeight="27.0" prefWidth="195.0" text="Go back to Tutor Page" />
+      <Button fx:id="loadsession" layoutX="233.0" layoutY="361.0" mnemonicParsing="false" onAction="#adddata" prefHeight="27.0" prefWidth="195.0" text="Load sessions" />
+      <TableView id="sessionTable" fx:id="sessionstable" layoutX="25.0" layoutY="123.0" prefHeight="204.0" prefWidth="1089.0">
+         <columns>
+            <TableColumn fx:id="sessionIDColumn" prefWidth="143.0" text="Session ID" />
+            <TableColumn fx:id="fullnameColumn" prefWidth="123.0" text="Fullname" />
+            <TableColumn fx:id="timeColumn" prefWidth="369.0" text="Time" />
+            <TableColumn fx:id="paymentmethodColumn" prefWidth="124.0" text="Payment Method" />
+            <TableColumn fx:id="dayColumn" prefWidth="105.0" text="Day" />
+            <TableColumn fx:id="emailColumn" prefWidth="223.0" text="Student email" />
+         </columns>
+      </TableView>
+      <TextField fx:id="idsession" layoutX="22.0" layoutY="406.0" prefHeight="27.0" prefWidth="340.0" promptText="Please enter in the session ID to cancel a session." />
+      <Button fx:id="cancelsession" layoutX="390.0" layoutY="406.0" mnemonicParsing="false" onAction="#cancelSessionData" text="Cancel Session" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorpaneLightBlue" prefHeight="312.0" prefWidth="648.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qmskillsfinal.ChangeStatusController">
+   <children>
+      <Text id="title" fx:id="createsessiontitle" fill="#fff8f8" layoutX="24.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Status" wrappingWidth="404.21826171875">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Text>
+      <Label id="ChosenModule" layoutX="34.0" layoutY="109.0" text="Chosen Module:" textAlignment="CENTER">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Label>
+      <AnchorPane id="Anchorpane2" fx:id="AnchorPane2" layoutX="21.0" layoutY="78.0" prefHeight="205.0" prefWidth="605.0" style="-fx-background-color: #F0F0F0;">
+         <children>
+            <Button id="Complete" fx:id="Change" layoutX="205.0" layoutY="150.0" mnemonicParsing="false" onAction="#ban" prefHeight="27.0" prefWidth="195.0" text="Confirm" />
+            <Button id="Cancel" fx:id="home" layoutX="18.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="165.0" text="Cancel" />
+            <ChoiceBox id="ChosenUsernameChoice" fx:id="username" layoutX="162.0" layoutY="49.0" prefHeight="27.0" prefWidth="263.0" />
+            <Label id="Time" fx:id="usernamelabel" layoutX="68.0" layoutY="55.0" text="Username" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox id="TimeChoice" fx:id="status" layoutX="162.0" layoutY="93.0" prefHeight="27.0" prefWidth="263.0" />
+            <Label fx:id="statuslabel" layoutX="80.0" layoutY="98.0" text="Status">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

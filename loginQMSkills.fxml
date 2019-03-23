@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="display" prefHeight="418.0" prefWidth="474.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qmskillsfinal.LoginQMSkillsController">
+   <children>
+      <Button id="clear" fx:id="clearbutton" layoutX="21.0" layoutY="261.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="27.0" prefWidth="103.0" text="Clear" />
+      <Button id="login" fx:id="loginbutton" layoutX="174.0" layoutY="261.0" mnemonicParsing="false" onAction="#verifyLogin" prefHeight="27.0" prefWidth="103.0" text="Login">
+         <font>
+            <Font name="System Font" size="13.0" />
+         </font></Button>
+      <Button id="home" fx:id="homebutton" layoutX="337.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="103.0" text="Home" />
+      <TextField id="userName" fx:id="userName" layoutX="136.0" layoutY="148.0" prefHeight="27.0" prefWidth="180.0" promptText="UserName" />
+      <PasswordField id="password" fx:id="password" layoutX="136.0" layoutY="196.0" prefHeight="27.0" prefWidth="180.0" promptText="Password" />
+      <ImageView id="logoQM" fx:id="logo" fitHeight="60.0" fitWidth="200.0" layoutX="126.0" layoutY="71.0">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="165.0" layoutY="320.0" text="Forgot Password" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

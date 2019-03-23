@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="624.0" style="-fx-background-color: #ADD8E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qmskillsfinal.UpdateDetailsController">
+   <children>
+      <AnchorPane id="Anchorpane2" layoutX="10.0" layoutY="68.0" prefHeight="332.0" prefWidth="605.0" style="-fx-background-color: #F0F0F0;">
+         <children>
+            <Button id="Confirm" layoutX="417.0" layoutY="278.0" mnemonicParsing="false" onAction="#updates" prefHeight="27.0" prefWidth="150.0" text="Confirm" />
+            <Button id="clearAllFields" layoutX="221.0" layoutY="278.0" mnemonicParsing="false" onAction="#clearAllFields" prefHeight="27.0" prefWidth="150.0" text="Clear All Fields" />
+            <Button id="home" layoutX="21.0" layoutY="278.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="165.0" text="Go to your Homepage" />
+            <Label id="Password" layoutX="12.0" layoutY="112.0" text="Password :" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="yearofstudy" layoutX="4.0" layoutY="149.0" text="Year of Study:">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField id="YearOfStudyTextBox" fx:id="yearofstudy" layoutX="103.0" layoutY="144.0" prefHeight="27.0" prefWidth="464.0" />
+            <Label id="phoneNumber" layoutX="4.0" layoutY="231.0" text="Phone Number:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="email" layoutX="30.0" layoutY="187.0" text="Email:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField id="EmailTextBox" fx:id="email" layoutX="103.0" layoutY="182.0" prefHeight="27.0" prefWidth="464.0" />
+            <TextField id="PhoneNumberTextBox" fx:id="phonenumber" layoutX="115.0" layoutY="225.0" prefHeight="27.0" prefWidth="452.0" />
+            <Label id="FullName" layoutX="15.0" layoutY="74.0" text="Full Name:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label id="Degree" layoutX="22.0" layoutY="24.0" text="Degree:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox id="DegreeChoiceBox" fx:id="degreechoice" layoutX="103.0" layoutY="19.0" prefWidth="150.0" />
+            <TextField id="FullNameTextBox" fx:id="fullname" layoutX="103.0" layoutY="69.0" prefHeight="27.0" prefWidth="464.0" />
+            <PasswordField fx:id="password" layoutX="103.0" layoutY="107.0" prefHeight="27.0" prefWidth="464.0" />
+         </children>
+      </AnchorPane>
+      <Text id="title" fill="#fff8f8" layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Details" wrappingWidth="404.21826171875">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Text>
+      <ImageView id="logo" fitHeight="60.0" fitWidth="198.0" layoutX="394.0" layoutY="8.0">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
